@@ -9,14 +9,14 @@ header{
     margin-top: 0px;
 }
 
-.logo img{
+/*.logo img{
     margin: 5px 5px 5px 5px;
     padding: 20px;
     border:none;
     border-radius: 0cm;
     width: 100px;
     height: 100px;
-}
+}*/
 
 nav ul li{
     list-style: none;
@@ -295,15 +295,7 @@ align-items: center;
 .giftcard{
     grid-area: giftcard;
 }
-.opciones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    height: 700px;
-    margin-bottom: 10px;
-}
+
  .aumento img{
      height: 180px;
      width: 140px;
@@ -385,10 +377,10 @@ grid-area: footer;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 300px;
+    height: 500px;
     align-items: center;
     gap: 20px;
-    font-size: x-large;
+    font-size: medium;
 }
 
 /*productos*/
@@ -442,5 +434,11 @@ grid-area: footer;
     transition-duration: 2s;
 }
 .gradiente{
-    background-image: linear-gradient(45deg, rgb(253, 250, 250), rgb(216, 187, 144), rgb(228, 167, 97)  );
+    background-image: linear-gradient(45deg, rgb(253, 250, 250), rgb(216, 187, 144), rgb(228, 167, 97) );
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
 }
