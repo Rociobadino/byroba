@@ -442,3 +442,6 @@ grid-area: footer;
     flex-direction: row;
     margin-top: 15px;
 }
+a:hover{
+    background-color: rgb(235, 193, 138);
+}
