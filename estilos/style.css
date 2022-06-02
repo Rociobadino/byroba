@@ -72,6 +72,50 @@ figcaption {
           align-items: center;
 }
 
+.btn--twitter {
+  background-color: #55acee;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.btn--tiktok {
+  background-color: #3a5795;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.btn--instagram {
+  background-color: #C25E30;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.sass, .sass2, .sass3 {
+  border-block-color: #C25E30;
+}
+
+.sass2 {
+  border-style: ridge;
+}
+
+.sass3 {
+  border-style: dashed;
+}
+
+.mix {
+  height: 200px;
+  width: 150px;
+}
+
+.mixmix {
+  height: 200px;
+  width: 150px;
+  border-style: dashed;
+}
+
 * {
   padding: 0;
   margin: 0;

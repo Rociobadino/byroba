@@ -1,0 +1,36 @@
+$redes:(
+    twitter: #55acee,
+    tiktok: #3a5795,
+    instagram: #C25E30,
+
+);
+@each $social, $fondo in $redes {
+    .btn--#{$social}{
+        background-color: $fondo;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+}
+.sass{
+    border-block-color:#C25E30 ;
+}
+.sass2{
+    @extend.sass;
+    border-style: ridge;
+}
+.sass3{
+    @extend.sass;
+    border-style: dashed;
+}
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
+.mix{
+    @include sizes (150px,200px);
+}    
+.mixmix{
+    @include sizes (150px,200px);
+    border-style: dashed;
+}
