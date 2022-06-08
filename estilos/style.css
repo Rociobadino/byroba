@@ -72,50 +72,6 @@ figcaption {
           align-items: center;
 }
 
-.btn--twitter {
-  background-color: #55acee;
-  border-radius: 10px;
-  margin-left: 100px;
-  margin-bottom: 10px;
-}
-
-.btn--tiktok {
-  background-color: #3a5795;
-  border-radius: 10px;
-  margin-left: 100px;
-  margin-bottom: 10px;
-}
-
-.btn--instagram {
-  background-color: #C25E30;
-  border-radius: 10px;
-  margin-left: 100px;
-  margin-bottom: 10px;
-}
-
-.sass, .sass2, .sass3 {
-  border-block-color: #C25E30;
-}
-
-.sass2 {
-  border-style: ridge;
-}
-
-.sass3 {
-  border-style: dashed;
-}
-
-.mix {
-  height: 200px;
-  width: 150px;
-}
-
-.mixmix {
-  height: 200px;
-  width: 150px;
-  border-style: dashed;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -181,7 +137,7 @@ figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 1300px;
+  height: 1000px;
 }
 
 .footer {
@@ -342,12 +298,12 @@ figcaption {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: auto;
+    margin-top: 90px;
     grid-gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 900px;
+    height: 500px;
   }
   figure img {
     margin-top: 100px;
@@ -405,7 +361,7 @@ figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 300px;
+  height: 500px;
 }
 
 /*SECCION GIFT CARD*/
@@ -439,7 +395,7 @@ figcaption {
 
 .aumento img {
   height: 180px;
-  width: 140px;
+  width: 130px;
 }
 
 @media (min-width: 780px) {
@@ -512,10 +468,14 @@ figcaption {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100px;
+  height: 200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*contacto*/
@@ -654,6 +614,7 @@ figcaption {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 15px;
+  margin-left: 0px;
 }
 
 a:hover {
@@ -662,5 +623,18 @@ a:hover {
 
 .fondo {
   background-color: #ebc18a;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

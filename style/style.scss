@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import "generales";
 @import "fotos";
-@import "operaciones";
 
 *{
     padding: 0;
@@ -40,7 +39,7 @@
     margin: auto;
     grid-gap: 10px;
     align-items: center;
-    height: 1300px
+    height: 1000px
 }
 
 .footer{
@@ -167,10 +166,11 @@ align-items: center;
         grid-template-columns: 1fr 1fr 1fr 1Fr;
         grid-template-rows: 1fr 1fr 1fr 1Fr;
         justify-content: center;
-        margin: auto;
+        margin-top: 90px;
         grid-gap: 20px;
         align-items: center;
-        height: 900px
+        height: 500px
+    
     }
     figure img{
         margin-top: 100px;
@@ -211,7 +211,7 @@ align-items: center;
     justify-content: center;
     gap: 20px;
     align-items: center;
-    height: 300px;
+    height: 500px;
 }
 /*SECCION GIFT CARD*/
 .grillatres{
@@ -235,7 +235,7 @@ align-items: center;
 
  .aumento img{
      height: 180px;
-     width: 140px;
+     width: 130px;
  }
 
  @media (min-width:780px){
@@ -286,8 +286,9 @@ align-items: center;
 .devoluciones{
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 200px;
     align-items: center;
+    flex-direction: column;
 }
 
 /*contacto*/
@@ -378,10 +379,17 @@ grid-area: footer;
     justify-content: center;
     flex-direction: row;
     margin-top: 15px;
+    margin-left: 0px;
 }
 a:hover{
     background-color: rgb(235, 193, 138);
 }
 .fondo{
     background-color:rgb(235, 193, 138);
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
