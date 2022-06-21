@@ -194,8 +194,6 @@ figure img{
     }
 }
 
-/* SECCION: COMO COMPRAR*/
-
 .grillados{
     display: grid;
     grid-template-columns: 1Fr;
@@ -223,7 +221,7 @@ figure img{
     align-items: center;
     height: 500px;
 }
-/*SECCION GIFT CARD*/
+
 .grillatres{
     display: grid;
     grid-template-columns: 1Fr;
@@ -272,7 +270,6 @@ figure img{
     }
  }
 
- /*cambios y devoluciones*/
 
 .grillacuatro{
     display: grid;
@@ -299,8 +296,6 @@ figure img{
     align-items: center;
     flex-direction: column;
 }
-
-/*contacto*/
 
 .grillacinco{
     display: grid;
@@ -330,7 +325,6 @@ grid-area: footer;
     font-size: medium;
 }
 
-/*productos*/
 .grillaseis{
     display: grid;
     grid-template-columns: 1Fr;
@@ -359,21 +353,6 @@ grid-area: footer;
     width: 100px;
     height: 100px;
 }
-/*@media (min-width:760px){
-    .grillaseis{
-        display: grid;
-        grid-template-columns: 1Fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "header" 
-        "productos"
-        "footer"
-    }
-    .short img{
-        width: 200px;
-        height: 200px;
-    }
-}*/
 
 .box:hover{
     transform: scale(1.5);
