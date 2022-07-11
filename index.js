@@ -38,3 +38,13 @@ for (let i = 0; i <= 50; i++){
     }  
 
 }
+
+let final = prompt ("ingrese el precio del producto para sumarle el impuesto")
+const sumaImpuesto = function(producto){
+    return producto+150
+}
+const suma = Number(final)
+console.log(sumaImpuesto(suma));
+
+
+
