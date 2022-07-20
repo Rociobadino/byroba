@@ -46,5 +46,36 @@ const sumaImpuesto = function(producto){
 const suma = Number(final)
 console.log(sumaImpuesto(suma));
 
+const lista = [
+    {
+        producto: "remera",
+        talle: 1
+    },
+    {
+        producto: "short",
+        talle: 2
+    },
+    {
+        producto: "buzo",
+        talle: 3
+    },
+    {
+        producto: "remera",
+        talle: 3
+    },
+    {
+        producto: "pantalon",
+        talle: 2
+    },
+]
 
+for (let i = 0; i < lista.length; i++){
+console.log(lista[i])
+}
 
+const nuevosProductos = [...lista]
+nuevosProductos.push("medias")
+console.log(nuevosProductos)
+
+const compras = lista.slice(1,3);
+console.log(compras);
