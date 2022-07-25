@@ -155,6 +155,7 @@ const total = impuestos.reduce((acc, curr) => {
     return acc + curr
 })
  console.log(total)
+ 
 
 const clientes = [
     {
@@ -173,13 +174,33 @@ const clientes = [
         nombre: "Diego",
         edad: 56
     },
-    {
-        nombre: "Victoria",
-        edad: 33
-    },
 ]
 console.log(clientes)
 
 clientes.forEach((elemento) =>{
     console.log(elemento.nombre)
 })
+
+const array = clientes.reduce((acc,elemento)=>{
+ return acc + `
+ 
+ <div class= "cli text-center fs-5 text">
+      <p>
+      Cliente del mes:
+      ${elemento.nombre}
+      </p>
+ </div>
+ `
+},"")
+ console.log(array)
+ 
+ const cli = document.querySelector(".cli")
+ console.log(cli)
+ 
+ cli.innerHTML= array
+
+const tituloByroba = document.querySelector(".titulo")
+console.log(tituloByroba)
+
+tituloByroba.innerText = "Bienvenidos a BY ROBA"
+
