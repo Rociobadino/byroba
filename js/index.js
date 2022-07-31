@@ -154,7 +154,7 @@ console.log(impuestos)
 const total = impuestos.reduce((acc, curr) => {
     return acc + curr
 })
- console.log(total)
+console.log(total)
  
 
 const clientes = [
@@ -192,12 +192,12 @@ const array = clientes.reduce((acc,elemento)=>{
  </div>
  `
 },"")
- console.log(array)
+console.log(array)
  
- const cli = document.querySelector(".cli")
- console.log(cli)
+const cli = document.querySelector(".cli")
+console.log(cli)
  
- cli.innerHTML= array
+cli.innerHTML= array
 
 const tituloByroba = document.querySelector(".titulo")
 console.log(tituloByroba)
