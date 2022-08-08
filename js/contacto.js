@@ -9,7 +9,7 @@ console.log(formulario, inputNombre, inputEmail, inputObservaciones)
 
 const personas = []
 
-class Persona {
+class persona {
     constructor(nombre, email, observaciones, state){
         this.nombre = nombre;
         this.email = email;
@@ -18,9 +18,20 @@ class Persona {
     }
 }
 
+const aJSONYSubirALs = (clave,valor) => {
+    const personasAJSON = JSON.stringify(valor)
+    localStorage.setItem(clave, personasAJSON)
+}
 formulario.onsubmit = (event) => {
     event.preventDefault()
     console.log(event)
-    personas.push(new Persona(inputNombre.value, inputEmail.value, inputObservaciones.value, inputState.value))
+    personas.push(new persona(inputNombre.value, inputEmail.value, inputObservaciones.value, inputState.value))
+    formulario.reset()
     console.log(personas)
+    aJSONYSubirALs ("personas", personas)
+}
+const deLS = (clave) => {
+    const personasTraidosdeLs = localStorage.getItem ("personas")
+    const parsearpersonas = JSON.parse("personasTraidosdeLs")
+    return parsearpersonas
 }

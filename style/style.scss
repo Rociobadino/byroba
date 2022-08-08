@@ -7,6 +7,7 @@
     margin: 0;
 }
 
+
 .principal{
     display: flex;
     flex-direction: row;
@@ -32,6 +33,7 @@
     grid-area: galeria;
 }
 .fotos{
+    display: flex;
     display: grid;
     grid-template-columns: 1Fr;
     grid-template-rows: 1Fr ;
@@ -384,4 +386,6 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}.block{
+    display: block;
 }
