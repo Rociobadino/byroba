@@ -27,6 +27,11 @@ formulario.onsubmit = (event) => {
     console.log(event)
     personas.push(new persona(inputNombre.value, inputEmail.value, inputObservaciones.value, inputState.value))
     formulario.reset()
+    swal({
+        title: "El formulario se envio correctamente!",
+        icon: "success",
+        button: "Volver a la pagina",
+    })
     console.log(personas)
     aJSONYSubirALs ("personas", personas)
 }

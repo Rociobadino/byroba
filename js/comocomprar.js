@@ -20,6 +20,11 @@ informacion.onsubmit = (event) => {
     console.log(event)
     nombres.push(new nombre(floatingname.value, floatingInput.value,))
    informacion.reset ()
+   swal({
+    title: "La informacion se envio correctamente!",
+    icon: "success",
+    button: "Volver a la pagina",
+})
     console.log(nombres)
     convertirAJSONYSubirALs ("nombres", nombres)
 }
