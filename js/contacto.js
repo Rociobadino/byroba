@@ -40,3 +40,15 @@ const deLS = (clave) => {
     const parsearpersonas = JSON.parse("personasTraidosdeLs")
     return parsearpersonas
 }
+
+fetch("https://formsubmit.co/ajax/rociob0710@gmail.com",{
+    method: "POST",
+    body: new FormData()
+})
+.then(res=> res.ok ? res.json(): Promise.reject(res))
+.then(json =>{
+    console.log(json)
+})
+.catch(err => {
+    console.log(err)
+});

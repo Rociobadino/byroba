@@ -66,17 +66,18 @@
       <section class="contacto formulario">
         <h1>CONTACTO</h1>
         <form class="row g-3 mx-4" id="formulario">
+        <legend>Envianos tus comentarios</legend>
           <div class="col-md-6">
             <label for="inputNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="inputNombre">
+            <input type="text" name="name" class="form-control" id="inputNombre" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required > 
           </div>
           <div class="col-md-6">
             <label for="inputEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail">
+            <input type="email" name= "email" class="form-control" id="inputEmail" required>
           </div>
           <div class="col-12">
             <label for="inputObservaciones" class="form-label">Observaciones</label>
-            <input type="text" class="form-control" id="inputObservaciones" placeholder="Observaciones">
+            <input type="text" name="observaciones" class="form-control" id="inputObservaciones" placeholder="Observaciones">
           </div>
           <div class="col-md-4">
             <label for="inputState" class="form-label">Como fue tu experiencia en BYROBA?</label>
@@ -91,6 +92,7 @@
             <input type="submit" class="btn btn-primary fondo text-dark">
           </div>
         </form>
+
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
           <symbol id="bootstrap" viewBox="0 0 118 94">
             <title>Bootstrap</title>
