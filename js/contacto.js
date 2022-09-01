@@ -22,9 +22,20 @@ const aJSONYSubirALs = (clave,valor) => {
     const personasAJSON = JSON.stringify(valor)
     localStorage.setItem(clave, personasAJSON)
 }
+
 formulario.onsubmit = (event) => {
     event.preventDefault()
-    console.log(event)
+    fetch("https://formsubmit.co/ajax/rociob0710@gmail.com",{
+        method: "POST",
+        body: new FormData(event.target)
+    })
+    .then(res=> res.ok ? res.json(): Promise.reject(res))
+    .then(json =>{
+        console.log(json)
+    })
+    .catch(err => {
+        console.log(err)
+    });
     personas.push(new persona(inputNombre.value, inputEmail.value, inputObservaciones.value, inputState.value))
     formulario.reset()
     swal({
@@ -32,7 +43,6 @@ formulario.onsubmit = (event) => {
         icon: "success",
         button: "Volver a la pagina",
     })
-    console.log(personas)
     aJSONYSubirALs ("personas", personas)
 }
 const deLS = (clave) => {
@@ -41,14 +51,5 @@ const deLS = (clave) => {
     return parsearpersonas
 }
 
-fetch("https://formsubmit.co/ajax/rociob0710@gmail.com",{
-    method: "POST",
-    body: new FormData()
-})
-.then(res=> res.ok ? res.json(): Promise.reject(res))
-.then(json =>{
-    console.log(json)
-})
-.catch(err => {
-    console.log(err)
-});
+
+

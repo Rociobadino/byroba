@@ -11,7 +11,7 @@ boton.onclick = () => {
         style: {
           background: "linear-gradient(to right, #00b09b, #96c93d)",
         },
-        onClick: function(){} // Callback after click
+        onClick: function(){}
       }).showToast();
 }
 const boton2 = document.querySelector("#botonDos")
@@ -27,7 +27,7 @@ boton2.onclick = () => {
         style: {
           background: "linear-gradient(to right, #00b09b, #96c93d)",
         },
-        onClick: function(){} // Callback after click
+        onClick: function(){}
       }).showToast();
 }
 const boton3 = document.querySelector("#botonTres")
