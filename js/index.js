@@ -49,31 +49,30 @@ const lista = [
     },
 ]
 
-for (let i = 0; i < lista.length; i++){
-console.log(lista[i])
+for (let i = 0; i < lista.length; i++) {
+    console.log(lista[i])
 }
 
 const nuevosProductos = [...lista]
 nuevosProductos.push("medias")
 console.log(nuevosProductos)
 
-const compras = lista.slice(1,3);
+const compras = lista.slice(1, 3);
 console.log(compras);
 
-const precio = [700,5000,4000,3400,1200,500]
+const precio = [700, 5000, 4000, 3400, 1200, 500]
 
 console.log(precio)
 
 const precioMayor = 3400 >= 5000 ? "Es mayor" : "Es menor"
 console.log(precioMayor)
 // DESTRUCTURING ARRAYS
-
-const [,precioMasAlto, , , ,precioMasBajo, ,] = precio
+const [, precioMasAlto, , , , precioMasBajo, ,] = precio
 console.log(precioMasAlto)
 console.log(precioMasBajo)
 
 const impuestos = precio.map((curr) => {
- return curr + 150
+    return curr + 150
 })
 
 console.log(impuestos)
@@ -82,7 +81,7 @@ const total = impuestos.reduce((acc, curr) => {
     return acc + curr
 })
 console.log(total)
- 
+
 const clientes = [
     {
         nombre: "Karina",
@@ -106,13 +105,13 @@ console.log(clientes)
 const nuevaReferencia = [...clientes]
 clientes.push("rocio")
 console.log(clientes)
-console.log (nuevaReferencia)
-clientes.forEach((elemento) =>{
+console.log(nuevaReferencia)
+clientes.forEach((elemento) => {
     console.log(elemento.nombre)
 })
 
-const array = clientes.reduce((acc,elemento)=>{
- return acc + `
+const array = clientes.reduce((acc, elemento) => {
+    return acc + `
  
  <div class= "cli text-center fs-5 text">
       <p>
@@ -121,13 +120,13 @@ const array = clientes.reduce((acc,elemento)=>{
       </p>
  </div>
  `
-},"")
+}, "")
 console.log(array)
- 
+
 const cli = document.querySelector(".cli")
 console.log(cli)
- 
-cli.innerHTML= array
+
+cli.innerHTML = array
 
 const tituloByroba = document.querySelector(".titulo")
 console.log(tituloByroba)
@@ -141,9 +140,9 @@ console.log(comprasMayorista)
 
 const compraMayorista = (cantidad, minorista) => cantidad >= 50 && minorista === false ? "mayorista" : "minorista"
 
-console.log(compraMayorista(30,true))
-console.log(compraMayorista(5,true))
-console.log(compraMayorista(300,false))
-console.log(compraMayorista(60,false))
+console.log(compraMayorista(30, true))
+console.log(compraMayorista(5, true))
+console.log(compraMayorista(300, false))
+console.log(compraMayorista(60, false))
 
 
